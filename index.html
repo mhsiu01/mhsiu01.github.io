@@ -49,6 +49,56 @@
             <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
               <tbody>
 
+                <tr onmouseout="r2r_stop()" onmouseover="r2r_start()">
+                  <td style="padding:16px;width:20%;vertical-align:top">
+                    <div class="one">
+                      <div class="two" id='r2r_image'><video  width=100% muted autoplay loop>
+                      <source src="images/4_colors.mp4" type="video/mp4">
+                      Your browser does not support the video tag.
+                      </video></div>
+                      <img src='images/maniskill_default.png' width=100%>
+                    </div>
+                    <script type="text/javascript">
+                      function r2r_start() {
+                        document.getElementById('r2r_image').style.opacity = "1";
+                      }
+
+                      function r2r_stop() {
+                        document.getElementById('r2r_image').style.opacity = "0";
+                      }
+                      r2r_stop()
+                    </script>
+                  </td>
+                  <td style="padding:16px;width:20%;vertical-align:bottom">
+                    <div class="one">
+                      <div class="two" id='r2r_image'><video  width=100% muted autoplay loop>
+                      <source src="images/4_textures.mp4" type="video/mp4">
+                      Your browser does not support the video tag.
+                      </video></div>
+                      <img src='images/maniskill_default.png' width=100%>
+                    </div>
+                    <script type="text/javascript">
+                      function r2r_start() {
+                        document.getElementById('r2r_image').style.opacity = "1";
+                      }
+
+                      function r2r_stop() {
+                        document.getElementById('r2r_image').style.opacity = "0";
+                      }
+                      r2r_stop()
+                    </script>
+                  </td>
+                  <td style="padding:8px;width:80%;vertical-align:middle">
+                    <a href="https://github.com/mhsiu01/ManiSkillDomain Randomization for ManiSkill/">
+                      <span class="papertitle">Domain Randomization for ManiSkill</span>
+                    </a>
+                    <p>
+                    Adding randomized lighting direction/color and object texture to ManiSkill.
+                    </p>
+                  </td>
+                </tr>
+
+
                 <tr>
                   <td style="padding:16px;width:20%;vertical-align:middle">
                     <img src="images/ACM05.png" alt="ACM_stylized" width="160" height="160">
@@ -61,21 +111,6 @@
                     <!-- <strong>Me</strong> -->
                     <!-- <br> -->
                     <p>Stylizing the ACM logo using Stable Diffusion and Control Net.</p>
-                  </td>
-                </tr>
-
-                <tr>
-                  <td style="padding:16px;width:20%;vertical-align:middle">
-                    <img src="images/tensorf_render.png" alt="tensorf_render" width="160" height="160">
-                  </td>
-                  <td style="padding:8px;width:80%;vertical-align:middle">
-                    <a href="https://github.com/mhsiu01/tensorf">
-                      <span class="papertitle">TensoRF</span>
-                    </a>
-                    <!-- <br> -->
-                    <!-- <strong>Me</strong> -->
-                    <!-- <br> -->
-                    <p>A from-scratch implementation of <a href="https://apchenstu.github.io/TensoRF/">Tensorial Radiance Fields</a>.</p>
                   </td>
                 </tr>
 
